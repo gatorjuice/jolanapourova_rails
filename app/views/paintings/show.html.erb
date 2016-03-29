@@ -1,0 +1,10 @@
+<div class="title">
+  <h2><%= @painting.name %></h2>
+  <% if current_user && current_user.admin %>
+    <%= link_to "Edit", "/paintings/#{@painting.id}/edit" %>
+  <% end %>
+</div>
+<div class="show-image">
+  <%= image_tag @painting.image.url %>
+  <h3><%= number_to_currency @painting.price, precision: 0 %></h3>
+</div>

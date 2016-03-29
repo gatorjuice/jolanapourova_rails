@@ -1,0 +1,10 @@
+<div class="row">
+  <% @paintings.each do |painting| %>
+    <div class="col-sm-4 index-section">
+      <h5><%= painting.name %> <span class="index-medium"><%= painting.medium %></span></h5> 
+      <%= link_to "/paintings/#{painting.id}", class: "thumbnail" do %>
+        <%= image_tag painting.image.url(:medium), alt: "#{painting.description}"%>
+      <% end %>
+    </div>
+  <% end %>
+</div>

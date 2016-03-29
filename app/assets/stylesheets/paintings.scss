@@ -1,3 +1,39 @@
-// Place all the styles related to the paintings controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// typography
+
+.index-medium {
+  font-size: 12px;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// index
+
+.index-section {
+  margin-bottom: 30px;
+  img {
+
+  }
+}
+
+
+// show
+
+.title {
+  text-align: center;
+}
+
+.show-image {
+  text-align: center;
+  img {
+  max-height: 70vh;
+  max-width: 90vw;
+}
+}
